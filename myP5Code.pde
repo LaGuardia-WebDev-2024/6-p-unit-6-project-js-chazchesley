@@ -12,6 +12,17 @@ void draw(){
 
   //💡⬇️⬇️⬇️💡 Your Code For This Project Goes Here
   
+  //face
+  stroke(0,0,0,0);
+  fill(244, 237, 247);
+  ellipse (220,170,200,200);
+  
+  //nose
+  stroke(0,0,0,0);
+   fill(244, 237, 247);
+  ellipse(150,210,100,120);
+  ellipse(110,230,110,90);
+ 
 
   
 
