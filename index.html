@@ -1,15 +1,15 @@
 <!-- Unit 6 Project
 Requirements
-[  ] three different shapes
-[  ] three different RGB colors
-[  ] three comments 
-[  ] three new HTML elements 
+[ yes ] three different shapes
+[ yes ] three different RGB colors
+[ yes ] three comments 
+[ yes ] three new HTML elements 
 
 Select ONE Additional 
 [ no ] Feature 1 - three different strokeWeight() commands
 [ no ] Feature 2 - Add a second <canvas>
 [ no ] Feature 3 - Change Tab Title & Image
-[ no ] Feature 4 - Typewriter Animation
+[ yes ] Feature 4 - Typewriter Animation
 [ no ] Feature 5 - Gradient Background
 -->
 
@@ -21,19 +21,66 @@ Select ONE Additional
     <title>Unit 6 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
-    <style></style>
+
+    <style>
+      body {
+        background-image: url("https://t3.ftcdn.net/jpg/09/62/00/06/360_F_962000684_ssUbRk5lDAMXZLAFc1TYuAf5APT9Dkq1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .container {
+        background-color: #f5b8be;
+      }
+      #start {
+        background-color: pink;
+      }
+      #end {
+        background-color: pink;
+      }
+      h2 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 0.15em solid magenta; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 0.15em; /* Adjust as needed */
+        animation: typing 3.5s steps(40, end),
+          blink-caret 0.75s step-end infinite;
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: magenta;
+        }
+        50% {
+          border-color: magenta;
+        }
+      }
+      canvas {
+        background-color: white;
+      }
+      h2 {
+        color: white;
+      }
+    </style>
   </head>
 
   <body>
     <div class="container">
       <div>
         <h2 id="start">How it started.</h2>
-        <img
-          class="pic" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/Chill_guy_original_artwork.jpg/220px-Chill_guy_original_artwork.jpg"
-        />
+        <img class="pic" src="https://emojis.wiki/thumbs/emojis/unicorn.webp" />
       </div>
       <div>
-        <h2 id="end">How it ended.</h2>
+        <h2 id="end">How it ended...</h2>
         <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
       </div>
     </div>
