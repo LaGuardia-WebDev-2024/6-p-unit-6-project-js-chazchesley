@@ -14,7 +14,7 @@ html{
 
 #myCanvas {
   border-radius: 30px;
-  border: 15px double #8bbcbbff;
+  border: 15px double #c70081;
 }
 
 .container{
@@ -30,7 +30,7 @@ html{
   width: 400px;
   object-fit: cover;
   border-radius: 30px;
-  border: 15px double #8bbcbbff;
+  border: 15px double #c70081;
 }
 
 h2{

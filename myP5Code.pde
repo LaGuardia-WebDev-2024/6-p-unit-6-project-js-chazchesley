@@ -16,7 +16,7 @@ void setup() {
  stroke(93, 26, 110);
   fill(244, 237, 247);
   arc(210,39,60,100,radians(60),radians(240));
-  fill(158, 32, 116);
+  fill(191, 55, 119);
   arc(205,39,40,90,radians(60),radians(240));
   
    //neck
@@ -67,11 +67,11 @@ fill(252, 3, 182);
   
  
   //eartwo
-    stroke(93, 26, 110);;
+    stroke(93, 26, 110);
   fill(244, 237, 247);
   arc(252,39,60,120,radians(60),radians(240));
   ellipse()
-   fill(158, 32, 116);
+   fill(191, 55, 119);
   arc(247,39,40,90,radians(60),radians(240));
   
  
@@ -86,11 +86,21 @@ fill(252, 3, 182);
   fill(244, 237, 247,);
       noStroke();
   ellipse(150,210,100,120);
+  stroke(93, 26, 110);
+  arc(150,210,100,120,radians(196),radians(233));
+  arc(150,210,100,120,radians(56),radians(90))
+   noStroke();
     ellipse(120,235,110,90);
+    stroke(93, 26, 110);
+    arc(120,235,110,90,radians(200),radians(250));
+    arc(120,235,110,90,radians(50),radians(90))
+    noStroke();
   fill(164, 62, 173);
+  stroke(93, 26, 110);
   arc(110,239,96,90,radians(60),radians(226));
+  
   fill(0,0,0)
-  ellipse(80,247,10,10);
+  ellipse(80,244,10,10);
   
   //horn
   stroke(87, 18, 110)
@@ -102,7 +112,7 @@ fill(252, 3, 182);
   quad(114,50,134,44,147,56,121,66)
   fill(10, 255, 153)
   quad(147,56,121,66,128,84,160,70)
-  fill(10, 239, 255)
+  fill(47, 160, 235)
   quad(128,84,160,70,173,83,138,108)
   fill(190, 10, 255)
   quad(173,83,135,102,141,116,179,88)
